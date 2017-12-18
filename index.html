@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Break It</title>
+	<title>Slide it!</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="game.js"></script>
 	<scriptsrc = "https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-
 </head>
-
 <body onload="load();">
-
-  <div id="slidingpuzzleContainer">
-  </div>
-
-  <div id="formatContainer">
-    select format:<br />
- 	<select name="format" id="format" size="1" onChange="this.options[this.selectedIndex].onclick()">
-            <option onclick="changeFormat(3,3);">Format 3 x 3</option>
-            <option onclick="changeFormat(4,4);">Format 4 x 4</option>
-	</select>
-
-  </div>
-
+	<h2>Welcome to puzzle x-press!</h2>
+	<div id="slidingpuzzleContainer"></div>
+	<div id="formatContainer">
+		select format:<br />
+		<select name="format" id="format" size="1" onChange="this.options[this.selectedIndex].onclick()">
+			<option onclick="changeFormat(3,3);">Format 3 x 3</option>
+			<option onclick="changeFormat(4,4);">Format 4 x 4</option>
+		</select>
+	</div>
 </body>
 </html>
+
