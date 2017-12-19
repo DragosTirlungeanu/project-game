@@ -44,15 +44,24 @@ function showSlidingpuzzle(puzzle) {
   $("#slidingpuzzleContainer").append(puzzle);
 }
 
-$(document).ready(function(){
-  $("#puzzlepiece").click(function(e) {
-    console.log(this);
-    var numPieces = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
-    var newPiece = $(this).attr("#numPieces");
-    var oldPiece = $("").attr("class");
-    $("#positionblank").fadeOut(function(){
-      $("#positionblank").removeClass(oldPiece).addClass(newPiece).fadeIn("fast");
-    });
-  });
-});
 
+
+
+// function checkWin () {
+// return true;
+
+//   var winner = false;
+//   var winPieces = $(this).attr(".puzzlepiece");
+//   var winArray = $(this).attr("id");
+//   if (winPieces == winArray) {
+//     winner = player;
+//   }else if{
+//     winner = null;
+//   }
+//   if (winner){
+//   alert((player == winner) ? "You beautiful mind!");
+//   return false;
+//   }else if{
+//     return = true;
+//   }
+// }
