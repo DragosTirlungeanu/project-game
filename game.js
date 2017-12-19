@@ -37,12 +37,7 @@ function showSlidingpuzzle(puzzle) {
 }
 
 
-// function shiftPuzzlepieces(el) {
+function shiftPuzzlepieces() {
+  $(".puzzlepiece").replaceWith(blank);
 
-//   var blank = $("positionblank"); 
-//   var temp = el.parentNode.insertBefore(document.createElement('a'), el); 
-//   el.parentNode.insertBefore(el, blank); 
-//   el.parentNode.insertBefore(blank, temp); 
-//   el.parentNode.removeChild(temp); 
-
-// }
+}
