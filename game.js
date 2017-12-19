@@ -2,8 +2,11 @@ $(load);
 
 function load() {
   $('#shuffleBoard').click(function() {
-    var pieces = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15, "blank"];
+    var pieces = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
     createSlidingpuzzle(shuffle(pieces), 4, 4);
+  // $('#getHelp').click(function() {
+  //   var pieces = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15, "blank"];
+  //   pieces.sort();
   });
   $("#slidingpuzzleContainer").on("click", ".puzzlepiece", function(e) {
     var thisId = $(this).attr("id");
@@ -44,9 +47,12 @@ function showSlidingpuzzle(puzzle) {
   $("#slidingpuzzleContainer").append(puzzle);
 }
 
-// 
-
-
+var button = document.getElementById('slidingpuzzleContainer'),
+  count = 30;
+button.onclick = function() {
+  count -= 1;
+  button.innerHTML = "Click me: " + count;
+};
 //   var imgs = $(this).attr("src"); //get all image tags from table
 //   for (i = 1 to imgs.length) {
 //     if imgs[i-1].source != "Buttons\\"+i+".png" return false;
