@@ -2,8 +2,17 @@ $(load);
 
 function load() {
   $('#shuffleBoard').click(function() {
-    var pieces = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,"blank"];
+    var pieces = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15, "blank"];
     createSlidingpuzzle(shuffle(pieces), 4, 4);
+  });
+  $("#slidingpuzzleContainer").on("click", ".puzzlepiece", function(e) {
+    var thisId = $(this).attr("id");
+    var source = $(this).attr("src");
+    var blank = $("#positionblank");
+    blank.attr("id", thisId);
+    blank.attr("src", source);
+    $(this).attr("id", "positionblank");
+    $(this).attr("src", "blank.png");
   });
 }
 
@@ -31,13 +40,19 @@ function createSlidingpuzzle(puzzlepieces, x, y) {
   showSlidingpuzzle(puzzle);
 }
 
-
 function showSlidingpuzzle(puzzle) {
   $("#slidingpuzzleContainer").append(puzzle);
 }
 
+$(document).ready(function(){
+  $("#puzzlepiece").click(function(e) {
+    console.log(this);
+    var numPieces = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+    var newPiece = $(this).attr("#numPieces");
+    var oldPiece = $("").attr("class");
+    $("#positionblank").fadeOut(function(){
+      $("#positionblank").removeClass(oldPiece).addClass(newPiece).fadeIn("fast");
+    });
+  });
+});
 
-function shiftPuzzlepieces() {
-  $(".puzzlepiece").replaceWith(blank);
-
-}
