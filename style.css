@@ -1,27 +1,12 @@
 body {
-/*  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;*/
   font-size: 14px;
   color: #000;
   background-color: #ceeeff;
 }
-/*
-img {
-  padding: 0;;
-  margin: 0;
-}*/
 
 h2 {
   margin-top: 30px;
 }
-
-/*#slidingpuzzleContainer3x3,
-#slidingpuzzleContainer4x4 {
-}*/
-/*
-#slidingpuzzleContainer3x3 {
-  width: 300px;
-  height: 300px;
-}*/
 
 #slidingpuzzleContainer4x4 {
   width: 400px;
@@ -37,19 +22,3 @@ h2 {
   width: 100px;
   height: 100px;
 }
-
-/*#formatContainer {
-  position: absolute;
-  top: 120px;
-  left: 600px;
-}*/
-/*
-#format {
-  margin-top: 20px;
-}*/
-
-/*#reset {
-  color: black;
-  background: white;
-  font-size: 14px;
-}*/
