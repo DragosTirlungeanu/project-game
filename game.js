@@ -5,11 +5,11 @@ $('#shuffleBoard').click(shuffleBoard);
 function load() {
   var puzzle = $('<div id="formatContainer">');
   for (var i = 0; i <= 15; ++i) {
-    puzzle += '<img src="gid.gif" alt="blank" width="100" height="98" />';
+    // puzzle += '<img src="gid.gif" alt="blank" width="100" height="98" />';
   }
   puzzle += '</div>';
   // showSlidingpuzzle(puzzle);
-  var pieces = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14];
+  var pieces = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
   createSlidingpuzzle(shuffle(pieces), 4, 4);
 
 }
