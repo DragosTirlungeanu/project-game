@@ -44,9 +44,13 @@ function showSlidingpuzzle(puzzle) {
   $("#slidingpuzzleContainer").append(puzzle);
 }
 
+// 
 
 
-
+//   var imgs = $(this).attr("src"); //get all image tags from table
+//   for (i = 1 to imgs.length) {
+//     if imgs[i-1].source != "Buttons\\"+i+".png" return false;
+// }
 // function checkWin () {
 // return true;
 
