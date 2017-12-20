@@ -56,6 +56,13 @@ function modify_qty(val) {
     return new_qty;
 }
 
+function endGame (winner, loser) {
+
+  if (player == CPU) {
+    alert (CPU);
+    return ("It's a tie.");
+  }
+
 
 // function modify_qty(val) {
 //   var qty = document.getElementById('lifeCount').value;
