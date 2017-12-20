@@ -44,12 +44,25 @@ function showSlidingpuzzle(puzzle) {
   $("#slidingpuzzleContainer").append(puzzle);
 }
 
-$("#slidingpuzzleContainer").click(function(){
-  var puzPiece = $(".puzzlepiece");
-  var lifeLeft = $("#lifeCount");
-  var characters = PuzPiece.value.split('');
-  lifeLeft.innerText = characters.length;
-});
+function modify_qty(val) {
+  var qty = document.getElementById('lifeCount').value;
+  var new_qty = parseInt(qty,0) + val;
+  if (new_qty < 0) {
+      new_qty = 0;
+    }
+    document.getElementById('lifeCount').value = new_qty;
+    return new_qty;
+    console.log(new_qty);
+}
+
+
+// $("#puzzlepiece").click(function(){
+//   var puzPiece = $(".puzzlepiece");
+//   var lifeLeft = $("#lifeCount");
+//   var characters = PuzPiece.value.split('');
+//   lifeLeft.innerText = characters.length;
+//   console.log()
+// });
 
 
 
