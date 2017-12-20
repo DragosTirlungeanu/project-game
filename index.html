@@ -8,21 +8,15 @@
 	<script src="game.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
-          <span id="shuffleBoard">Start Game</span>
-          <span id="pic-1" class="btn btn-info">Hint Here..</span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-    </div>
-	<h2>Welcome!</h2>
-<!-- 	<button id="shuffleBoard">Start Game</button> -->
-
-	<!-- <button id="pic-1" class="btn btn-info">Hint Here..</button> -->
+	<div class="topnav">
+	<a>Welcome!</a>
+	<a class="active" href="#home" id="shuffleBoard">Start Game</a>
+	<a href="#news" id="pic-1" class="btn btn-info">Hint Here..</a>
+	<a href="#contact" class="box">
+		<label for="qty"><span title="Quantity">Set Difficulty</span></label>
+	    <input id="qty" value="30" />
+	  </a>
+	</div>
 
 	<div class="container" id="head-shot">
 		<div class="row">
@@ -36,10 +30,10 @@
 		</div>
 	</div>
 
-    <div class="box">
+<!--     <div class="box">
 	    <label for="qty"><span title="Quantity">Set Difficulty</span></label>
 	    <input id="qty" value="30" />
-	</div>
+	</div> -->
 </body>
 </html>
 
