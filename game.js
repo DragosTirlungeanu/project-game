@@ -10,7 +10,7 @@ function load() {
     if (btn.hasClass('shuffleBoard')){
       btn.text("");
     }else{
-      btn.text("Randomize!")
+      btn.text("Shuffle!")
     }
   });
 
