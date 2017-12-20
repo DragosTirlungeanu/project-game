@@ -2,19 +2,39 @@
 <html>
 <head>
 	<title>Slide Puzz</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src = "https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="game.js"></script>
 </head>
 <body>
+	<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+          <span id="shuffleBoard">Start Game</span>
+          <span id="pic-1" class="btn btn-info">Hint Here..</span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+    </div>
 	<h2>Welcome!</h2>
-	<button id="shuffleBoard">Start Game</button>
+<!-- 	<button id="shuffleBoard">Start Game</button> -->
 
-	<button id="pic-1" class="btn btn-info">Hint Here..</button>
-	<div><img id="obj-1" src="acShowMe.jpg" style="display:none;"/></div>
+	<!-- <button id="pic-1" class="btn btn-info">Hint Here..</button> -->
 
-	<div id="slidingpuzzleContainer" onclick="modifyQty(-1)"></div>
-	<div id="formatContainer"></div>
+	<div class="container" id="head-shot">
+		<div class="row">
+			<div class="col-sm-3">
+				<div><img id="obj-1" src="acShowMe.jpg" style="display:none;" class="img-responsive"/></div>
+			</div>
+			<div class="col-md-9">
+				<div id="slidingpuzzleContainer" onclick="modifyQty(-1)" class="img-responsive"></div>
+				<div id="formatContainer"></div>
+			</div>
+		</div>
+	</div>
 
     <div class="box">
 	    <label for="qty"><span title="Quantity">Set Difficulty</span></label>
