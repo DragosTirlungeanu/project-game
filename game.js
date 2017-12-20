@@ -1,10 +1,12 @@
 $(load);
 var new_qty;
 var pieces;
+var puzzle;
 function load() {
   $('#shuffleBoard').click(function() {
     pieces = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
     createSlidingpuzzle(shuffle(pieces), 4, 4);
+
   });
   $("#slidingpuzzleContainer").on("click", ".puzzlepiece", function(e) {
     var thisId = $(this).attr("id");
@@ -28,7 +30,7 @@ function shuffle(array) {
 }
 
 function createSlidingpuzzle(puzzlepieces, x, y) {
-  var puzzle = $("<div></div>").attr("id", "slidingpuzzleContainer" + x + 'x' + y);
+  puzzle = $("<div></div>").attr("id", "slidingpuzzleContainer" + x + 'x' + y);
   for (var puzzleNr = 0; puzzleNr < puzzlepieces.length; ++puzzleNr) {
     var image = $('<img />');
     $(image).attr("src", puzzlepieces[puzzleNr] + '.png')
@@ -59,9 +61,17 @@ function modifyQty(val) {
 }
 
 function endGame () {
+   var win = true;
+   for (var i = 0; i < 15; i++) {
+    console.log(puzzle.children().eq(i).attr("src"));
+      if (puzzle.children().eq(i).attr("src") != (i + 1) + ".png") {
+        win = false;
+      }
+    }
+    console.log(win);
   if (new_qty == 0){
     alert("You lost mate.. It's over..");
-  }else if (pieces == [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15, "blank"]) {
+  } else if (win == true) {
     alert("You win!");
   }
 }
