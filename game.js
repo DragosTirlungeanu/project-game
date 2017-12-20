@@ -1,8 +1,9 @@
 $(load);
-
+var new_qty;
+var pieces;
 function load() {
   $('#shuffleBoard').click(function() {
-    var pieces = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
+    pieces = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
     createSlidingpuzzle(shuffle(pieces), 4, 4);
   });
   $("#slidingpuzzleContainer").on("click", ".puzzlepiece", function(e) {
@@ -13,6 +14,7 @@ function load() {
     blank.attr("src", source);
     $(this).attr("id", "positionblank");
     $(this).attr("src", "blank.png");
+    endGame();
   });
 }
 
@@ -44,9 +46,9 @@ function showSlidingpuzzle(puzzle) {
   $("#slidingpuzzleContainer").append(puzzle);
 }
 
-function modify_qty(val) {
+function modifyQty(val) {
     var qty = document.getElementById('qty').value;
-    var new_qty = parseInt(qty,10) + val;
+    new_qty = parseInt(qty) + val;
     
     if (new_qty < 0) {
         new_qty = 0;
@@ -56,64 +58,10 @@ function modify_qty(val) {
     return new_qty;
 }
 
-function endGame (winner, loser) {
-
-  if (new_qty == 0) {
-    alert ("You lost mate.. It's over..");
-    // return ("Game Over!");
+function endGame () {
+  if (new_qty == 0){
+    alert("You lost mate.. It's over..");
+  }else if (pieces == [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15, "blank"]) {
+    alert("You win!");
   }
 }
-
-// function modify_qty(val) {
-//   var qty = document.getElementById('lifeCount').value;
-//   var new_qty = parseInt(qty,0) + val;
-//   if (new_qty < 0) {
-//       new_qty = 0;
-//     }
-//     document.getElementById('lifeCount').value = new_qty;
-//     return new_qty;
-// }
-
-
-// $("#puzzlepiece").click(function(){
-//   var puzPiece = $(".puzzlepiece");
-//   var lifeLeft = $("#lifeCount");
-//   var characters = PuzPiece.value.split('');
-//   lifeLeft.innerText = characters.length;
-//   console.log()
-// });
-
-
-
-// var button = $('#clickme')
-// button.onclick = function() {
-//   count = 0;
-//   count += 1;
-//   button.innerHTML = '#clickme' + count;
-// };
-
-  // $('#getHelp').click(function() {
-  //   var pieces = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15, "blank"];
-  //   pieces.sort();
-//   var imgs = $(this).attr("src"); //get all image tags from table
-//   for (i = 1 to imgs.length) {
-//     if imgs[i-1].source != "Buttons\\"+i+".png" return false;
-// }
-// function checkWin () {
-// return true;
-
-//   var winner = false;
-//   var winPieces = $(this).attr(".puzzlepiece");
-//   var winArray = $(this).attr("id");
-//   if (winPieces == winArray) {
-//     winner = player;
-//   }else if{
-//     winner = null;
-//   }
-//   if (winner){
-//   alert((player == winner) ? "You beautiful mind!");
-//   return false;
-//   }else if{
-//     return = true;
-//   }
-// }
