@@ -6,9 +6,24 @@ function load() {
   $('#shuffleBoard').click(function() {
     pieces = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
     createSlidingpuzzle(shuffle(pieces), 4, 4);
+    var btn = $('#shuffleBoard')
+    if (btn.hasClass('shuffleBoard')){
+      btn.text("Hide Hint..");
+    }else{
+      btn.text("Hint Here..")
+    }
   });
-  $('#hide-1').click(function() {   $('#obj-1').hide('slow'); });
-  $('#show-1').click(function() {   $('#obj-1').show('slow'); }); 
+
+  $('#pic-1').click(function() {
+    var pic1 = $('#pic-1');
+    pic1.toggleClass('pic-1');
+    $('#obj-1').toggle('medium');
+    if (pic1.hasClass('pic-1')){
+      pic1.text("Hide Hint..");
+    }else{
+      pic1.text("Hint Here..")
+    }
+  });
 
   $("#slidingpuzzleContainer").on("click", ".puzzlepiece", function(e) {
     var thisId = $(this).attr("id");

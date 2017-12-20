@@ -9,12 +9,14 @@
 <body>
 	<h2>Welcome!</h2>
 	<button id="shuffleBoard">Start Game</button>
-	<button id="hide-1" class="btn btn-info">Hide</button>
-	<button id="show-1" type="button" class="btn btn-info">Hint Here!</button>
-	<div><img id="obj-1" src="acShowMe.jpg"/></div>
+
+	<button id="pic-1" class="btn btn-info">Hint Here..</button>
+	<div><img id="obj-1" src="acShowMe.jpg" style="display:none;"/></div>
+
 	<div id="slidingpuzzleContainer" onclick="modifyQty(-1)"></div>
 	<div id="formatContainer"></div>
-    <div class="box">    
+
+    <div class="box">
 	    <label for="qty"><span title="Quantity">Set Difficulty</span></label>
 	    <input id="qty" value="30" />
 	</div>
