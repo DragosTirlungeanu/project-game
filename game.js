@@ -45,15 +45,27 @@ function showSlidingpuzzle(puzzle) {
 }
 
 function modify_qty(val) {
-  var qty = document.getElementById('lifeCount').value;
-  var new_qty = parseInt(qty,0) + val;
-  if (new_qty < 0) {
-      new_qty = 0;
+    var qty = document.getElementById('qty').value;
+    var new_qty = parseInt(qty,10) + val;
+    
+    if (new_qty < 0) {
+        new_qty = 0;
     }
-    document.getElementById('lifeCount').value = new_qty;
+    
+    document.getElementById('qty').value = new_qty;
     return new_qty;
-    console.log(new_qty);
 }
+
+
+// function modify_qty(val) {
+//   var qty = document.getElementById('lifeCount').value;
+//   var new_qty = parseInt(qty,0) + val;
+//   if (new_qty < 0) {
+//       new_qty = 0;
+//     }
+//     document.getElementById('lifeCount').value = new_qty;
+//     return new_qty;
+// }
 
 
 // $("#puzzlepiece").click(function(){
