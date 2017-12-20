@@ -8,9 +8,9 @@ function load() {
     createSlidingpuzzle(shuffle(pieces), 4, 4);
     var btn = $('#shuffleBoard')
     if (btn.hasClass('shuffleBoard')){
-      btn.text("Hide Hint..");
+      btn.text("");
     }else{
-      btn.text("Hint Here..")
+      btn.text("Randomize!")
     }
   });
 
