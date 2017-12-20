@@ -58,11 +58,11 @@ function modify_qty(val) {
 
 function endGame (winner, loser) {
 
-  if (player == CPU) {
-    alert (CPU);
-    return ("It's a tie.");
+  if (new_qty == 0) {
+    alert ("You lost mate.. It's over..");
+    // return ("Game Over!");
   }
-
+}
 
 // function modify_qty(val) {
 //   var qty = document.getElementById('lifeCount').value;
