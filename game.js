@@ -6,8 +6,10 @@ function load() {
   $('#shuffleBoard').click(function() {
     pieces = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
     createSlidingpuzzle(shuffle(pieces), 4, 4);
-
   });
+  $('#hide-1').click(function() {   $('#obj-1').hide('slow'); });
+  $('#show-1').click(function() {   $('#obj-1').show('slow'); }); 
+
   $("#slidingpuzzleContainer").on("click", ".puzzlepiece", function(e) {
     var thisId = $(this).attr("id");
     var source = $(this).attr("src");
@@ -18,6 +20,7 @@ function load() {
     $(this).attr("src", "blank.png");
     endGame();
   });
+  // $("#slidingpuzzleContainer").on("click", modifyQty(-1));
 }
 
 function shuffle(array) {
