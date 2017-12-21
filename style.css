@@ -12,6 +12,7 @@ h2 {
 .topnav {
     background-color: #352f00;
     overflow: hidden;
+    padding: 0px;
 }
 .topnav a {
     float: left;

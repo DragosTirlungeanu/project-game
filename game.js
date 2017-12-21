@@ -32,7 +32,7 @@ function load() {
     blank.attr("id", thisId);
     blank.attr("src", source);
     $(this).attr("id", "positionblank");
-    $(this).attr("src", "blank.png");
+    $(this).attr("src", "blank.gif");
 
 
 
