@@ -48,7 +48,10 @@ h2 {
   left: 140px;
   border: 4px solid #352f00;
 }
-
+#audioContainer {
+    position: fixed;
+    bottom: 0;
+}
 /*.col-md-6 {
   width: 400px;
   height: 400px;

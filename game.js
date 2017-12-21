@@ -24,6 +24,9 @@ function load() {
       pic1.text("Hint Here..")
     }
   });
+  $(document).ready(function() {
+    $("#my_audio").get(0).play();
+});
 
   $("#slidingpuzzleContainer").on("click", ".puzzlepiece", function(e) {
     var thisId = $(this).attr("id");
