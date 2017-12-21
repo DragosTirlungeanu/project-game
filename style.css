@@ -32,6 +32,11 @@ h2 {
     color: white;
 }
 
+.row {
+  float:left;
+  width:60%;
+}
+
 #obj-1 {
   width: 400px;
   height: 400px;
@@ -54,4 +59,10 @@ h2 {
   float: left;
   width: 100px;
   height: 100px;
+}
+
+@media (max-width:800px) {
+  .left, .main, .right {
+    width:100%;
+  }
 }
