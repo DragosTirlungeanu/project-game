@@ -10,26 +10,22 @@ h2 {
 }
 
 .topnav {
-    background-color: #352f00;
-    overflow: hidden;
-    padding: 0px;
+  background-color: #352f00;
+  overflow: hidden;
+  padding: 0px;
 }
 .topnav a {
-    float: left;
-    color: #e0dca3;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  float: left;
+  color: #e0dca3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 .topnav a:hover {
-    background-color: #e0dca3;
-    color: black;
+  background-color: #e0dca3;
+  color: black;
 }
-/*.row {
-  float:left;
-  width:60%;
-}*/
 
 #obj-1 {
   width: 400px;
@@ -48,10 +44,27 @@ h2 {
   left: 140px;
   border: 4px solid #352f00;
 }
-#audioContainer {
+
+.puzzlepiece {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+/*@media (max-width:800px) {
+  .left, .main, .right {
+    width:100%;
+  }
+}*/
+
+/*.row {
+  float:left;
+  width:60%;
+}*/
+/*#audioContainer {
     position: fixed;
     bottom: 0;
-}
+}*/
 /*.col-md-6 {
   width: 400px;
   height: 400px;
@@ -60,15 +73,3 @@ h2 {
   left: 140px;
   border: 4px solid #352f00;
 }*/
-
-.puzzlepiece {
-  float: left;
-  width: 100px;
-  height: 100px;
-}
-
-@media (max-width:800px) {
-  .left, .main, .right {
-    width:100%;
-  }
-}
