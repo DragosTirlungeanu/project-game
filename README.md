@@ -10,27 +10,20 @@ Note that this game is designed for players aged 3 and above for healthe and saf
 
 ### Functionality
 
-To start the game 
-simply open the HTML file in your web browser
+To start the game open the HTML file in your web browser, then simply click 'Start Game' from the top navigation bar. 
+
+The game will automatically start off with a set number of 30 moves. If you wish to amend this please enter the amount desired in the box next to 'Set Moves'.
+
+If a player will find it too difficult for any reason there is a button to show an image of how the final puzzle should look like.
 
 Implementation
 The functionality has been implemented using the following features:
 
 Documented
-Twitter Bootstrap 3.2, 
+Twitter Bootstrap, 
 Javascript, HTML5
-well-structured CSS built with LESS
-responsive web development/design (no separate m-dot site)
-page content sourced via XHR service call with JSON response (static)
-multi-browser unit testing with Jasmine & Karma
-grunt-driven builds to dev and prod distributions
-Usage
-Building
-Fork/clone this repo, then:
+well-structured CSS, responsive web development/design
 
-$ bower install && npm install
-# build the dev distribution:
-$ grunt dev
 # run the unit tests:
 $ grunt test
 # just build the docs
