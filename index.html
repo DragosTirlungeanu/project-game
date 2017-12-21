@@ -10,9 +10,9 @@
 <body>
 	<div class="topnav">
 		<a>Welcome!</a>
-		<a class="active" href="#home" id="shuffleBoard">Start Game</a>
-		<a href="#news" id="pic-1" class="btn btn-info">Hint Here..</a>
-		<a href="#contact" class="box">
+		<a class="btn btn-info" href="#shuffle" id="shuffleBoard">Start Game</a>
+		<a href="#hint" id="pic-1" class="btn btn-info">Hint Here..</a>
+		<a href="#level" class="box">
 		<label for="qty"><span title="Quantity">Set Difficulty</span></label>
 		    <input id="qty" value="30" />
 		 </a>
@@ -20,7 +20,7 @@
 
 	<div class="container" id="head-shot">
 		<div class="row">
-			<div class="col-sm-6">
+			<div class="col-md-6">
 				<div><img id="obj-1" src="acShowMe.jpg" style="display:none;" class="img-responsive"/></div>
 			</div>
 			<div class="col-md-6">
@@ -28,6 +28,9 @@
 				<div id="formatContainer"></div>
 			</div>
 		</div>
+	</div>
+	<div>
+		<embed height="60" type="audio/mpeg" width="144" src="audio.mp3" volume="80" loop="true" autostart="false"/>
 	</div>
 	<script
   src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

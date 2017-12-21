@@ -33,9 +33,6 @@ function load() {
     blank.attr("src", source);
     $(this).attr("id", "positionblank");
     $(this).attr("src", "blank.gif");
-
-
-
     endGame();
   });
 

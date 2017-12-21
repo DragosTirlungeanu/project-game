@@ -26,16 +26,10 @@ h2 {
     background-color: #e0dca3;
     color: black;
 }
-
-.topnav a.active {
-    ;
-    color: white;
-}
-
-.row {
+/*.row {
   float:left;
   width:60%;
-}
+}*/
 
 #obj-1 {
   width: 400px;
@@ -54,6 +48,15 @@ h2 {
   left: 140px;
   border: 4px solid #352f00;
 }
+
+/*.col-md-6 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 130px;
+  left: 140px;
+  border: 4px solid #352f00;
+}*/
 
 .puzzlepiece {
   float: left;
