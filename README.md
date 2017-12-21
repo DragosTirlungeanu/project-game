@@ -17,7 +17,7 @@ Then simply press 'Start Game' from the top navigation bar.
 
 The game will automatically start off with a set number of 30 moves.
 
-####*Customising*
+####*Customizing*
 If a player will find it too difficult for any reason there is a button to show an image of how the final puzzle should look like. 
 
 If a player wishes to amend the difficulty of the game please modify the contents of 'Set Moves' box to the amount desired.
@@ -37,3 +37,5 @@ Twitter Bootstrap
 • Responsive web development/design
 
 *This site is kept up to date with the latest code in the codebase.*
+
+*Created and developed by Dragos Tirlungeanu*
