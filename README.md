@@ -11,7 +11,9 @@ Note that this game is designed for players aged 3 and above for healthe and saf
 ###Functionality
 
 ####*Running*
-To start the game open the HTML file in your web browser, then simply click 'Start Game' from the top navigation bar. 
+To start the game click [HERE](https://https://github.com/DragosTirlungeanu/project-game/tree/feature) and open the HTML file in your web browser.
+
+Then simply press 'Start Game' from the top navigation bar. 
 
 The game will automatically start off with a set number of 30 moves.
 
@@ -29,7 +31,8 @@ Twitter Bootstrap
 • Javascript
  
 • HTML5
-well-structured CSS 
+
+• Structured CSS 
 
 • Responsive web development/design
 
