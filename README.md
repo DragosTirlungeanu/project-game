@@ -2,11 +2,11 @@
 
 ###Game Purpose
 
-Slide-puzz was developt for educational purpuses combined with an interactive approach that will keep players engaged.
+Slide-puzz was developed for educational purposes combined with an interactive approach that will keep players engaged.
 
 This is a straight forward game that displays a picture of 'Connor' from 'Assassins Creed III' sliced into 16 equally sized pictures. For a positive result please check out the features in the pipeline.
 
-Note that this game is designed for players aged 3 and above for healthe and safety purposes.
+Note that this game is designed for players aged 3 and above for health and safety purposes.
 
 ###Functionality
 
