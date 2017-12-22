@@ -3,6 +3,7 @@ var new_qty;
 var pieces;
 var puzzle;
 function load() {
+  
   $('#shuffleBoard').click(function() {
     pieces = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
     createSlidingpuzzle(shuffle(pieces), 4, 4);
@@ -79,11 +80,19 @@ function modifyQty(val) {
   document.getElementById('qty').value = new_qty;
   return new_qty;
 }
-function resetMoves (){
-  var press = document.getElementsByClass('box')
-  press.mousePressed(resetFn);
-}
 
+// function resetMoves (){
+//   var press = document.getElementsByClass('box')
+//   press.mousePressed(resetFn);
+// }
+
+// function resetFn (){
+//   var qty = document.getElementById('qty');
+
+//   new_qty = ;
+ 
+//   return new_qty;
+// }
 
 function endGame () {
   var win = true;
