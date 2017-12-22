@@ -1,4 +1,4 @@
-#Slide-Puzz
+#Slide-Puzz v1.01 Beta​
 
 ###Game Purpose
 
@@ -24,6 +24,8 @@ If a player wishes to amend the difficulty of the game please modify the content
 
 ####*Implementation*
 The functionality has been implemented using the following features:
+
+• Trello
 
 • Documented
 Twitter Bootstrap
