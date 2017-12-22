@@ -3,7 +3,7 @@ var new_qty;
 var pieces;
 var puzzle;
 function load() {
-  
+
   $('#shuffleBoard').click(function() {
     pieces = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
     createSlidingpuzzle(shuffle(pieces), 4, 4);
@@ -18,11 +18,11 @@ function load() {
   $('#pic-1').click(function() {
     var pic1 = $('#pic-1');
     pic1.toggleClass('pic-1');
-    $('#obj-1').toggle('medium');
+    $('#obj-1').toggle('slow');
     if (pic1.hasClass('pic-1')){
       pic1.text("Hide Hint..");
     }else{
-      pic1.text("Hint Here..")
+      pic1.text("Hint Here..");
     }
   });
   $(document).ready(function() {
@@ -33,8 +33,8 @@ function load() {
     var thisId = $(this).attr("id");
     var source = $(this).attr("src");
     var blank = $("#positionblank");
-    blank.attr("id", thisId);
-    blank.attr("src", source);
+      blank.attr("id", thisId);
+      blank.attr("src", source);
     $(this).attr("id", "positionblank");
     $(this).attr("src", "blank.gif");
     endGame();
@@ -108,5 +108,3 @@ function endGame () {
     alert("You win!");
   }
 }
-
-
