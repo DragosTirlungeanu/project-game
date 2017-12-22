@@ -12,23 +12,15 @@
 		<a>Welcome!</a>
 		<a class="btn btn-info" href="#shuffle" id="shuffleBoard">Start Game</a>
 		<a href="#hint" id="pic-1" class="btn btn-info">Hint Here..</a>
-		<a href="#level" class="box">
+		<a href="#level" class="box" for="qty" title="Quantity">Reset Moves<input id="qty" value="31" /></a>
+<!-- 		<a href="#level" class="box">
 		<label for="qty"><span title="Quantity">Set Moves :</span></label>
-		    <input id="qty" value="31" />
-		 </a>
+		<input id="qty" value="31" />
+		</a> -->
 	</div>
-
-	<div class="container" id="head-shot">
-		<div class="row">
-			<div class="col-md-6">
-				<div><img id="obj-1" src="acShowMe.jpg" style="display:none;" class="img-responsive"/></div>
-			</div>
-			<div class="col-md-6">
-				<div id="slidingpuzzleContainer" onclick="modifyQty(-1)" class="img-responsive"></div>
-				<div id="formatContainer"></div>
-			</div>
-		</div>
-	</div>
+	<div><img id="obj-1" src="acShowMe.jpg" style="display:none;" class="img-responsive"/></div>
+	<div id="slidingpuzzleContainer" onclick="modifyQty(-1)" class="img-responsive"></div>
+	<div id="formatContainer"></div>
 	<div id="audioContainer">
 		<audio id="my_audio" src="audio.mp3" loop="loop"></audio>
 	</div>

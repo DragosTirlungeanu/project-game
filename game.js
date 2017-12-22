@@ -71,29 +71,33 @@ function showSlidingpuzzle(puzzle) {
 }
 
 function modifyQty(val) {
-    var qty = document.getElementById('qty').value;
-    new_qty = parseInt(qty) + val;
-    
-    if (new_qty < 0) {
-        new_qty = 0;
-    }
-    
-    document.getElementById('qty').value = new_qty;
-    return new_qty;
+  var qty = document.getElementById('qty').value;
+  new_qty = parseInt(qty) + val;
+  if (new_qty < 0) {
+      new_qty = 0;
+  }
+  document.getElementById('qty').value = new_qty;
+  return new_qty;
+}
+function resetMoves (){
+  var press = document.getElementsByClass('box')
+  press.mousePressed(resetFn);
 }
 
+
 function endGame () {
-   var win = true;
-   for (var i = 0; i < 15; i++) {
-    console.log(puzzle.children().eq(i).attr("src"));
-      if (puzzle.children().eq(i).attr("src") != (i + 1) + ".png") {
-        win = false;
-      }
-    }
-    console.log(win);
+  var win = true;
+  for (var i = 0; i < 15; i++) {
+  console.log(puzzle.children().eq(i).attr("src"));
+    if (puzzle.children().eq(i).attr("src") != (i + 1) + ".png") {
+    win = false;
+  }
+  }
   if (new_qty == 0){
     alert("You lost mate.. It's over..");
-  } else if (win == true) {
+  }else if (win == true){
     alert("You win!");
   }
 }
+
+
